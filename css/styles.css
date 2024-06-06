@@ -36,6 +36,11 @@ header nav a {
     transition: 0.5s;
 }
 
+.listaNav li {
+    display: inline;
+    justify-content: center;
+}
+
 header .menu-hamburguesa {
     width: 2rem;
     display: none;
@@ -47,6 +52,10 @@ h1 {
     padding: 25px;
     font-weight: bold;
     font-size: 3rem;
+}
+
+.tituloInicio {
+    margin-left: 300px ;
 }
 
 img {
@@ -219,6 +228,10 @@ span {
     flex-direction: column;
 }
 
+.card {
+    width: 18rem; !important
+}
+
 .grid-servicios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -344,6 +357,16 @@ span {
 .form-grid .boton:hover {
     background-color: rgb(2, 90, 2);
     transition: 0.5s;
+}
+
+.labelEstilo {
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
 }
 
 
