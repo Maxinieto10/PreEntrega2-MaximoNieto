@@ -1,0 +1,93 @@
+/* Media query para tablets de 426px a 768px */
+@media (min-width: 426px) and (max-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    header nav {
+        padding-right: 0;
+        padding-bottom: 15px;
+        display: none;
+    }
+
+    header a img {
+        width: 10rem;
+    }
+
+    header .menu-hamburguesa {
+        width: 2rem;
+        display: block;
+        padding-right: 5px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+
+    .grid-sec1 {
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+
+    .item-1,
+    .item-2,
+    .item-3 {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .item-1 img,
+    .item-2 img,
+    .item-3 img {
+        padding-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .grid-sec2,
+    .grid-sec3 {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .grid-servicios {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        margin: 15px;
+    }
+
+    .form-grid .boton {
+        width: 100%;
+        padding: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer img {
+        width: 10rem;
+    }
+
+    footer ul {
+        padding-top: 15px;
+    }
+}

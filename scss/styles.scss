@@ -1,0 +1,22 @@
+/*Reset*/
+
+
+//base
+
+@import "./base/reset";
+
+//import
+
+@import "./layout/header";
+@import "./layout/inicio";
+@import "./layout/footer";
+@import "./layout/servicios";
+@import "./layout/contacto";
+@import "./layout/quienessomos";
+@import "./layout/tienda";
+
+//mediaquerys
+
+@import "./layout/media1200.scss";
+@import "./layout/media425";
+@import "./layout/media768";

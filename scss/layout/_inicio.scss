@@ -1,0 +1,115 @@
+.tituloInicio {
+    h1 {
+        font-family: "Poppins", sans-serif;
+        color: #161921;
+        padding: 25px;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+}
+
+.grid-sec1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    padding: 25px;
+
+    .item-1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        border: 1px solid white;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+
+        .texto {
+            padding: 35px;
+        }
+
+        img {
+            width: 25%;
+            padding-left: 25px;
+            position: relative;
+            bottom: 12px; 
+        }
+    }
+
+    .item-2 {
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        border: 1px solid white;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        
+        .texto {
+            padding: 25px;
+        }
+
+        img {
+            width: 20%;
+            padding-left: 25px;
+        }
+    }
+
+    .item-3 {
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        border: 1px solid white;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+
+        .texto {
+            padding: 25px;
+        }
+
+        img {
+            width: 110px;
+            padding-left: 25px;
+        }
+    }
+}
+
+.grid-sec2 {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.grid-sec3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 15px;
+
+    .grid-1 img {
+        position: relative;
+        bottom: 8rem;
+        align-content: center;
+    }
+
+    .grid-2 img {
+        position: relative;
+        bottom: 8rem;
+        align-content: center;
+    }
+
+    .grid-3 img {
+        position: relative;
+        bottom: 8rem;
+        align-content: center;
+    }
+}
