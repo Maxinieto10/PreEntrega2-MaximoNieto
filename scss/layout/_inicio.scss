@@ -3,6 +3,7 @@
         font-family: "Poppins", sans-serif;
         color: #161921;
         padding: 25px;
+        padding-left: 23rem;
         font-weight: bold;
         font-size: 3rem;
     }
@@ -86,14 +87,39 @@
 }
 
 .grid-sec3 {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
-    column-gap: 15px;
+    column-gap: 400px;
     font-family: "Poppins", sans-serif;
     text-align: center;
     padding: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+
+    & > div {
+        display: inline-block;
+        width: 33.33%; // Ajusta este valor si agregas más elementos
+        box-sizing: border-box;
+        animation: slide 15s linear infinite;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(100%);
+        }
+        33% {
+            transform: translateX(0);
+        }
+        66% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(-200%);
+        }
+    }
+    
 
     .grid-1 img {
         position: relative;
@@ -113,3 +139,4 @@
         align-content: center;
     }
 }
+

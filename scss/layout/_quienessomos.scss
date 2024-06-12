@@ -1,9 +1,17 @@
-.quienessomos p {
-    font-family: "Poppins", sans-serif;
-    padding: 25px;
-    font-size: 20px;
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 15px;
-    margin: 35px;
+.quienessomos {
+    p {
+        font-family: "Poppins", sans-serif;
+        padding: 25px;
+        font-size: 30px;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 15px;
+        margin: 35px;
+    }
+
+    h1 {
+        display:flex;
+        text-align: center;
+        padding-left: 27rem;
+    }
 }

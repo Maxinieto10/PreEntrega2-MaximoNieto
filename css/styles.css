@@ -42,8 +42,10 @@ span {
 header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #afafaf;
   align-items: center;
+  background: rgb(175, 175, 175);
+  background: linear-gradient(0deg, rgb(175, 175, 175) 0%, rgba(253, 187, 45, 0) 5%);
 }
 header img {
   width: 15rem;
@@ -75,6 +77,7 @@ header .menu-hamburguesa {
   font-family: "Poppins", sans-serif;
   color: #161921;
   padding: 25px;
+  padding-left: 23rem;
   font-weight: bold;
   font-size: 3rem;
 }
@@ -148,14 +151,36 @@ header .menu-hamburguesa {
 }
 
 .grid-sec3 {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
-  column-gap: 15px;
+  column-gap: 400px;
   font-family: "Poppins", sans-serif;
   text-align: center;
   padding: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.grid-sec3 > div {
+  display: inline-block;
+  width: 33.33%;
+  box-sizing: border-box;
+  animation: slide 15s linear infinite;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  33% {
+    transform: translateX(0);
+  }
+  66% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
 }
 .grid-sec3 .grid-1 img {
   position: relative;
@@ -284,18 +309,25 @@ footer ul li a:hover {
 .form-grid .formulario1 {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
 }
 .form-grid .casillas {
-  width: 90%;
+  width: 690px;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid black;
   font-family: "Poppins", sans-serif;
 }
+.form-grid .casillas:hover, .form-grid .casillas:focus {
+  background-color: rgba(24, 153, 12, 0.164);
+  transition: background-color 0.3s ease;
+}
+.form-grid .labelEstilo {
+  font-family: "Poppins", sans-serif;
+}
 .form-grid .boton {
   background-color: green;
-  width: 93%;
+  width: 100%;
   border: none;
   border-radius: 5px;
   padding: 25px;
@@ -304,7 +336,7 @@ footer ul li a:hover {
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
-.form-grid .boton :hover {
+.form-grid .boton:hover {
   background-color: rgb(2, 90, 2);
   transition: 0.5s;
 }
@@ -312,11 +344,16 @@ footer ul li a:hover {
 .quienessomos p {
   font-family: "Poppins", sans-serif;
   padding: 25px;
-  font-size: 20px;
+  font-size: 30px;
   background-color: white;
   border: 1px solid white;
   border-radius: 15px;
   margin: 35px;
+}
+.quienessomos h1 {
+  display: flex;
+  text-align: center;
+  padding-left: 27rem;
 }
 
 .grid-tienda {
