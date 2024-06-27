@@ -198,6 +198,12 @@ header .menu-hamburguesa {
   align-content: center;
 }
 
+.tarjetas {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+
 footer {
   background-color: #111015;
   display: flex;
@@ -362,6 +368,15 @@ footer ul li a:hover {
   flex-direction: column;
 }
 
+.grid-sec2 .card img {
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+.grid-sec2 .card .card-body .card-title {
+  font-size: 20px;
+}
+
 /* Media query para pantallas medianas de 769px a 1200px */
 @media (min-width: 769px) and (max-width: 1200px) {
   header {
@@ -370,16 +385,13 @@ footer ul li a:hover {
   header a img {
     width: 12rem;
   }
-  h1 {
-    font-size: 2.5rem;
-    padding: 20px;
-  }
   h2 {
     font-size: 1.75rem;
     padding: 20px;
   }
   .grid-sec1 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
   }
   .item-1,
   .item-2,
@@ -393,7 +405,11 @@ footer ul li a:hover {
     padding: 20px;
   }
   .grid-sec2 {
-    padding: 20px;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+    padding-top: 70px;
   }
   .grid-sec3 {
     grid-template-columns: repeat(2, 1fr);
@@ -406,6 +422,27 @@ footer ul li a:hover {
     grid-template-columns: 1fr 1fr;
     padding: 20px;
     margin: 20px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .form-grid .formulario1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-grid .formulario1 .casillas {
+    width: 100%;
+  }
+  .form-grid .formulario2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-grid .formulario2 h2 {
+    text-align: center;
+  }
+  .form-grid .formulario2 iframe {
+    width: 100%;
+    padding: 25px;
   }
   .form-grid .boton {
     padding: 20px;
@@ -415,6 +452,26 @@ footer ul li a:hover {
   }
   footer img {
     width: 12rem;
+  }
+  .tarjetas img {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .titulo h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 50px;
+    text-align: center;
+  }
+  .quienessomos h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 50px;
+    text-align: center;
   }
 }
 /* Media query para dispositivos móviles hasta 425px */
@@ -437,10 +494,6 @@ footer ul li a:hover {
     width: 2rem;
     display: block;
     padding-right: 5px;
-  }
-  h1 {
-    font-size: 1.5rem;
-    padding: 15px;
   }
   img {
     width: 100%;
@@ -469,7 +522,9 @@ footer ul li a:hover {
   .grid-sec2,
   .grid-sec3 {
     flex-direction: column;
-    padding: 15px;
+    align-items: center;
+    text-align: center;
+    padding-top: 70px;
   }
   .grid-servicios {
     grid-template-columns: 1fr;
@@ -477,8 +532,24 @@ footer ul li a:hover {
   }
   .form-grid {
     grid-template-columns: 1fr;
-    padding: 10px;
-    margin: 15px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .form-grid .formulario1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-grid .formulario1 .casillas {
+    width: 100%;
+  }
+  .form-grid .formulario2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-grid .formulario2 iframe {
+    width: 100%;
+    padding: 25px;
   }
   .form-grid .boton {
     width: 100%;
@@ -493,6 +564,26 @@ footer ul li a:hover {
   }
   footer ul {
     padding-top: 15px;
+  }
+  .tarjetas img {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .titulo h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .quienessomos h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    text-align: center;
   }
 }
 /* Media query para tablets de 426px a 768px */
@@ -514,10 +605,6 @@ footer ul li a:hover {
     width: 2rem;
     display: block;
     padding-right: 5px;
-  }
-  h1 {
-    font-size: 2rem;
-    padding: 15px;
   }
   img {
     width: 100%;
@@ -547,6 +634,9 @@ footer ul li a:hover {
   .grid-sec3 {
     flex-direction: column;
     padding: 15px;
+    align-items: center;
+    text-align: center;
+    padding-top: 70px;
   }
   .grid-servicios {
     grid-template-columns: 1fr;
@@ -556,6 +646,27 @@ footer ul li a:hover {
     grid-template-columns: 1fr;
     padding: 10px;
     margin: 15px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .form-grid .formulario1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-grid .formulario1 .casillas {
+    width: 100%;
+  }
+  .form-grid .formulario2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-grid .formulario2 h2 {
+    text-align: center;
+  }
+  .form-grid .formulario2 iframe {
+    width: 100%;
+    padding: 25px;
   }
   .form-grid .boton {
     width: 100%;
@@ -570,6 +681,26 @@ footer ul li a:hover {
   }
   footer ul {
     padding-top: 15px;
+  }
+  .tarjetas img {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .titulo h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .quienessomos h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    text-align: center;
   }
 }
 
